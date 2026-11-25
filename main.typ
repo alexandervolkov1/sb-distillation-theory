@@ -1,4 +1,4 @@
-#let body-font = "New Computer Modern"
+#let body-font = "Old Standard"
 #let math-font = "OldStandard-Math"
 
 #set document(title: "Перенос паров сурьмы в потоке водорода")
@@ -8,16 +8,13 @@
 #show math.equation: set text(font: math-font, fallback: false)
 #show title: set align(left)
 #show title: set text(size: 17pt, weight: "bold")
+#show heading: set text(weight: "bold")
 #show heading.where(level: 1): set text(size: 14pt)
 #show heading.where(level: 2): set text(size: 12pt)
 #show heading.where(level: 3): set text(size: 11pt)
 #set heading(numbering: "1.1.")
 
-#let boxed(body) = align(center, box(
-  stroke: 0.45pt,
-  inset: 4pt,
-  body,
-))
+#let boxed(body) = align(center, box(body))
 
 #let symbols-table(..cells) = table(
   columns: (27mm, 1fr, 39mm),

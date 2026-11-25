@@ -16,17 +16,17 @@ typst compile --font-path .\fonts main.typ
 
 ## Шрифты
 
-Первые две строки `main.typ` задают шрифты текста и формул. По умолчанию используются New Computer Modern и Old Standard Math.
+Первые две строки `main.typ` задают шрифты текста и формул. По умолчанию используются Old Standard и Old Standard Math.
 
 ```typst
-#let body-font = "New Computer Modern"
+#let body-font = "Old Standard"
 #let math-font = "OldStandard-Math"
 ```
 
 Для альтернативной пары замените эти строки на следующие.
 
 ```typst
-#let body-font = "Old Standard"
+#let body-font = "New Computer Modern"
 #let math-font = "OldStandard-Math"
 ```
 
