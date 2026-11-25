@@ -16,6 +16,8 @@
 
 #let boxed(body) = align(center, box(body))
 
+#let overdot(body) = text(stroke: 0.03em, math.dot(text(stroke: none, body)))
+
 #let symbols-table(..cells) = table(
   columns: (27mm, 1fr, 39mm),
   align: (center + horizon, left + horizon, center + horizon),
@@ -160,12 +162,12 @@ $]
 а $C_(upright("trap"))$ обозначает эффективную
 проводимость ловушки для водорода.
 
-Если объёмный расход $dot(V)_(upright("ref"))$
+Если объёмный расход $overdot(V)_(upright("ref"))$
 задан при опорных давлении $p_(upright("ref"))$
 и температуре $T_(upright("ref"))$, то
 
 $
-  Q_2 = p_(upright("ref")) dot(V)_(upright("ref")).
+  Q_2 = p_(upright("ref")) overdot(V)_(upright("ref")).
 $
 
 При этом проводимость ловушки должна быть определена
@@ -176,14 +178,14 @@ $
 Молярный расход водорода задаётся регулятором:
 
 $
-  dot(n)_2 = frac(p_(upright("ref")) dot(V)_(upright("ref")), R T_(upright("ref"))).
+  overdot(n)_2 = frac(p_(upright("ref")) overdot(V)_(upright("ref")), R T_(upright("ref"))).
 $
 
 Соответствующий молярный поток через поперечное
 сечение трубки составляет
 
 #boxed[$
-  N_2 = frac(p_(upright("ref")) dot(V)_(upright("ref")), R T_(upright("ref")) S) .
+  N_2 = frac(p_(upright("ref")) overdot(V)_(upright("ref")), R T_(upright("ref")) S) .
 $]
 
 Таким образом, заданы молярный поток водорода $N_2$
@@ -909,13 +911,13 @@ $
 молярный расход сурьмы через трубку равен
 
 #boxed[$
-  dot(n)_1 = N_1 S .
+  overdot(n)_1 = N_1 S .
 $]
 
 Соответствующий массовый расход составляет
 
 #boxed[$
-  dot(m)_1 = M_1 N_1 S .
+  overdot(m)_1 = M_1 N_1 S .
 $]
 
 Одновременно решение позволяет определить
@@ -1191,9 +1193,9 @@ $upright("H")_2$. Молярные потоки считаются
   [$N$], [Суммарный молярный поток смеси], [$upright("моль") thin upright("м")^(- 2) thin upright("с")^(- 1)$],
   [$N_w$], [Суммарный молярный поток смеси у стенки], [$upright("моль") thin upright("м")^(- 2) thin upright("с")^(- 1)$],
   [$J_(upright("diff"), i)$], [Диффузионная составляющая молярного потока компонента $i$], [$upright("моль") thin upright("м")^(- 2) thin upright("с")^(- 1)$],
-  [$dot(n)_i$], [Молярный расход компонента $i$], [$upright("моль") thin upright("с")^(- 1)$],
-  [$dot(m)_1$], [Массовый расход сурьмы], [$upright("кг") thin upright("с")^(- 1)$],
-  [$dot(V)_(upright("ref"))$], [Объёмный расход при опорных условиях], [$upright("м")^3 thin upright("с")^(- 1)$],
+  [$overdot(n)_i$], [Молярный расход компонента $i$], [$upright("моль") thin upright("с")^(- 1)$],
+  [$overdot(m)_1$], [Массовый расход сурьмы], [$upright("кг") thin upright("с")^(- 1)$],
+  [$overdot(V)_(upright("ref"))$], [Объёмный расход при опорных условиях], [$upright("м")^3 thin upright("с")^(- 1)$],
   [$Q_2$], [Газовый поток водорода в единицах давления и объёма], [$upright("Па") thin upright("м")^3 thin upright("с")^(- 1)$],
   [$C_(upright("trap"))$], [Эффективная проводимость ловушки для водорода], [$upright("м")^3 thin upright("с")^(- 1)$],
   [$M_i$], [Молярная масса компонента $i$], [$upright("кг") thin upright("моль")^(- 1)$],
